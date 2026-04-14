@@ -1,13 +1,18 @@
 {
   "manifest_version": 3,
-  "name": "LV Tracker Pro",
-  "version": "1.0",
-  "description": "Analyseur de données en temps réel pour LV Chine",
+  "name": "LV Tracker Ultimate",
+  "version": "3.0",
   "content_scripts": [
     {
       "matches": ["https://*.louisvuitton.cn/*"],
       "js": ["content.js"],
       "run_at": "document_start"
+    }
+  ],
+  "web_accessible_resources": [
+    {
+      "resources": ["inject.js"],
+      "matches": ["https://*.louisvuitton.cn/*"]
     }
   ]
 }
